@@ -29,21 +29,31 @@ Objective-C,node.js,javascript,phonegap,jquerymobile
 
 #####Nota.Inc
 	
-Python Djangoを用いて、[davinci note](http://davin.ci/)における機能追加。  
+Python Djangoを用いて、davin.ciにおける機能追加。  
 他ブログ対応、Discuss対応等。  
-[Gyazo](http://gyazo.com)におけるmongoDB対応、サービス運用、新規機能追加。  
+GyazoのmongoDB対応、サービス運用、新規機能追加。  
 PHP,Python,mongoDB,AWS
 
 ---
 
 * Intern
 
-2010年 CyberAgentTechnologyCamp  
-2011年 Recruit  
-2012年 Rakuten
+2011年 CyberAgentTechnologyCamp  
+2012年 Recruit  
+2013年 Rakuten
 
 
 ---
+
+* Contest
+
+2010年 New Island Contest 決勝進出  
+2011年 CyberAgentアプリアイディアコンテスト 優勝  
+2011年 GREE IDEAJAM 準決勝進出  
+その他、複数出場。
+
+----
+
 
 
 * Other
@@ -52,6 +62,13 @@ PHP,Python,mongoDB,AWS
 iPhoneアプリ作ったり、Win8アプリ作ったり、Webサービス作ったりしてます。
 
 ---
+
+
+
+
+
+	
+
 
 
 
