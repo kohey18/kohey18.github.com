@@ -6,6 +6,7 @@ tagline:
 tags:
 modified: 10-21-2013
 image:
+
 ---
 <h1 style="text-align:center;">About
 </h1>
@@ -31,7 +32,7 @@ Objective-C,node.js,javascript,phonegap,jquerymobile
 	
 Python Djangoを用いて、davin.ciにおける機能追加。  
 他ブログ対応、Discuss対応等。  
-GyazoのmongoDB対応、サービス運用、新規機能追加。  
+GyazoのmongoDB対応、サービス運用、インフラ対応、新規機能追加。  
 PHP,Python,mongoDB,AWS
 
 ---
@@ -55,13 +56,18 @@ PHP,Python,mongoDB,AWS
 ----
 
 
-
 * Other
 
 京都で[CAMPHOR-](http://camph.net)という学生プログラマーとデザイナーの集団やってます。  
 iPhoneアプリ作ったり、Win8アプリ作ったり、Webサービス作ったりしてます。
 
 ---
+
+* Blog
+
+[CAMPHOR-TechBlog](http://tech.camph.net)
+
+[HEYBlog To Keep My Mental](http://koheyhey18.hatenadiary.jp/)
 
 
 
