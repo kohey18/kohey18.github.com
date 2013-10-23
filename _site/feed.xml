@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">HEY Blog</title>
+<subtitle type="text">A short tagline</subtitle>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2013-10-23T00:46:09-04:00</updated>
+<id>/</id>
+<author>
+  <name>Kohey Kawai</name>
+  <uri>/</uri>
+  <email></email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[jekyllとgithubpagesでブログ作ってみた]]></title>
+  <link rel="alternate" type="text/html" href="/articles/20131023" />
+  <id>/articles/20131023</id>
+  <updated>2013-10-23T00:00:00-00:00</updated>
+  <published>2013-10-23T00:00:00-04:00</published>
+  
+  <author>
+    <name>Kohey Kawai</name>
+    <uri></uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;今までは、&lt;a href=&quot;http://koheyhey18.hatenadiary.jp&quot;&gt;koheyhey18.hatenadiary.jp&lt;/a&gt;とかAmebaとかでブログ書いてたけど、こっちで書いてみる。&lt;/p&gt;
+
+&lt;p&gt;ブログ記事もそうやけど、Aboutとかのコンテンツも随時追加していきます。&lt;/p&gt;
+
+&lt;p&gt;今日はこれだけ&lt;/p&gt;
+
+&lt;p&gt;Kohey&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/articles/20131023&quot;&gt;jekyllとgithubpagesでブログ作ってみた&lt;/a&gt; was originally published by Kohey Kawai at &lt;a href=&quot;&quot;&gt;HEY Blog&lt;/a&gt; on October 23, 2013.&lt;/p&gt;</content>
+</entry>
+
+</feed>
