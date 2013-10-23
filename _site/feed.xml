@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2013-10-23T04:54:01-04:00</updated>
+<updated>2013-10-23T05:02:10-04:00</updated>
 <id>/</id>
 <author>
   <name>Kohey Kawai</name>
@@ -26,7 +26,9 @@
     <uri></uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;socket.io周りでいつも、あれ？この情報どうやって受信するor送信するんやっけ？っていうのをメモしておく。&lt;/p&gt;
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://tech.camph.net&quot;&gt;こっち&lt;/a&gt;で書いてた記事をこっちでコピーして表示してみる！&lt;/p&gt;
+
+&lt;p&gt;socket.io周りでいつも、あれ？この情報どうやって受信するor送信するんやっけ？っていうのをメモしておく。&lt;/p&gt;
 
 &lt;p&gt;もちろん、前提条件は以下のコード内に書きます。&lt;/p&gt;
 
