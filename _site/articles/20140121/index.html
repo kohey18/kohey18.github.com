@@ -5,29 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>node socket.ioまとめ &#8211; HEY Blog</title>
+<title>リニューアル &#8211; HEY Blog</title>
 <meta name="description" content="">
-<meta name="keywords" content="node">
+<meta name="keywords" content="jekly">
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="/images/">
-<meta name="twitter:title" content="node socket.ioまとめ">
+<meta name="twitter:title" content="リニューアル">
 <meta name="twitter:description" content="こーへいのブログ">
 <meta name="twitter:creator" content="@kouhei18">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node socket.ioまとめ">
+<meta property="og:title" content="リニューアル">
 <meta property="og:description" content="こーへいのブログ">
-<meta property="og:url" content="/articles/20131023_socket">
+<meta property="og:url" content="/articles/20140121">
 <meta property="og:site_name" content="HEY Blog">
 
 
 
 
 
-<link rel="canonical" href="/articles/20131023_socket">
+<link rel="canonical" href="/articles/20140121">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="HEY Blog Feed">
 
 
@@ -80,11 +80,8 @@
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
-		        
-				<li><a href="/about" >About</a></li>
-		        
-				<li><a href="/articles" >Articles</a></li>
-		        
+		      <li><a href="/about">About</li>
+		      <li><a href="/products">Products</li>		      
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
@@ -109,76 +106,23 @@
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
-      <h1 itemprop="name">node socket.ioまとめ</h1>
+      <h1 itemprop="name">リニューアル</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap" itemprop="text">
-      <p><a href="http://tech.camph.net">こっち</a>で書いてた記事をこっちでコピーして表示してみる！</p>
+      <p>このページはリニューアルしました。</p>
 
-<p>socket.io周りでいつも、あれ？この情報どうやって受信するor送信するんやっけ？っていうのをメモしておく。</p>
+<p>テクノロジー系のブログは</p>
 
-<p>もちろん、前提条件は以下のコード内に書きます。</p>
+<p><a href="http://techhey.hatenablog.com">TechHey</a></p>
 
-<p><code>
-var io = require('socket.io');
-io.sockets.on('connection', function(socket) {
-//この中に書くよ
-});
-</code></p>
+<p>に移動しました。</p>
 
-<h3 id="section">送信者も含め全員に送る</h3>
+<p>こちらのページは自己紹介とプロダクト一覧のポートフォリオっぽい感じのページにしようと思います。</p>
 
-<p><code>
-io.sockets.emit('event_name',{name:"hoge"});
-</code></p>
+<p>以上、よろしくお願いします！</p>
 
-<h3 id="section-1">送信者以外全員に送る</h3>
-
-<p><code>
-io.socket.broadcast('event_name',{name:"hoge"});
-</code></p>
-
-<h3 id="socketid">送信者のsocketのidを取得する</h3>
-
-<p><code>
-var socket_id = socket.id;
-</code></p>
-
-<h3 id="room">専用のroomに入る</h3>
-
-<p><code>
-socket.join(room_id);
-</code></p>
-
-<h3 id="socketid-1">指定したsocket_idに送る</h3>
-
-<p><code>
-io.sockets.socket(socket_id).emit('event_name',{name:"hoge"});
-</code></p>
-
-<h3 id="section-2">送信者のみに送る</h3>
-
-<p><code>
-io.socket.socket(socket.id).emit('event_name',{name:"hoge"});
-</code></p>
-
-<h3 id="room-1">room内全員に信する</h3>
-
-<p><code>
-io.sockets.in(room_id).emit('event_name',{name:"hoge"});
-</code></p>
-
-<h3 id="disconnectroom">disconnectしないで、roomから消える</h3>
-<p>disconnectが走れば、自動的にこれが走るが、disconnectしないでもroomから消えるには</p>
-
-<p><code>
-socket.leave(room_id);
-</code></p>
-
-<p>この辺、押さえとけば、socket.io使ったチャット関連はいけるっぽい。
-非同期処理に慣れたい。</p>
-
-<p>こーへい</p>
+<p>河合 航平</p>
 
 
       <hr />
@@ -196,42 +140,16 @@ socket.leave(room_id);
 
 
         </div>
-        <p class="byline"><strong>node socket.ioまとめ</strong> was published on <time datetime="2013-10-23T00:00:00-04:00" itemprop="datePublished">October 23, 2013</time> and last modified on <time datetime="2013-10-23" itemprop="dateModified">October 23, 2013</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="/about" title="About Kohey Kawai" itemprop="url">Kohey Kawai</a></span></span>.</p>
+        <p class="byline"><strong>リニューアル</strong> was published on <time datetime="2014-01-21T00:00:00-05:00" itemprop="datePublished">January 21, 2014</time> and last modified on <time datetime="2014-01-21" itemprop="dateModified">January 21, 2014</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="/about" title="About Kohey Kawai" itemprop="url">Kohey Kawai</a></span></span>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   </article>
 </div><!-- /#main -->
 
 <div class="footer-wrap" id="footer-wrap">
-  <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="/articles">View all articles</a>)</small></h4>
-    <ul>
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="/articles/20131024" title="SSD増強したった">SSD増強したった</a></li>
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <li><a href="/articles/20131023" title="jekyllとgithubpagesでブログ作ってみた">jekyllとgithubpagesでブログ作ってみた</a></li>
-      
-    
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
+  
   <footer>
-    <span>&copy; 2013 Kohey Kawai. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
+    <span>&copy; 2014 Kohey Kawai. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->
@@ -239,6 +157,7 @@ socket.leave(room_id);
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="/assets/js/scripts.min.js"></script>
+
 	        
 
 </body>

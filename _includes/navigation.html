@@ -5,9 +5,8 @@
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
-		        {% for link in site.links %}
-				<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
+		      <li><a href="/about">About</li>
+		      <li><a href="/products">Products</li>		      
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->

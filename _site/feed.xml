@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2013-10-23T11:44:45-04:00</updated>
+<updated>2014-01-21T06:56:27-05:00</updated>
 <id>/</id>
 <author>
   <name>Kohey Kawai</name>
@@ -15,276 +15,33 @@
 
 
 <entry>
-  <title type="html"><![CDATA[SSD増強したった]]></title>
-  <link rel="alternate" type="text/html" href="/articles/20131024" />
-  <id>/articles/20131024</id>
-  <updated>2013-10-23T00:00:00-00:00</updated>
-  <published>2013-10-23T00:00:00-04:00</published>
+  <title type="html"><![CDATA[リニューアル]]></title>
+  <link rel="alternate" type="text/html" href="/articles/20140121" />
+  <id>/articles/20140121</id>
+  <updated>2014-1-21T00:00:00-00:00</updated>
+  <published>2014-01-21T00:00:00-05:00</published>
   
   <author>
     <name>Kohey Kawai</name>
     <uri></uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;今日、あるサーバーがパンパンになって、SSD増強する必要があったからそのまとめ。&lt;/p&gt;
+  <content type="html">&lt;p&gt;このページはリニューアルしました。&lt;/p&gt;
 
-&lt;p&gt;サーバー会社から&lt;/p&gt;
+&lt;p&gt;テクノロジー系のブログは&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-Hi!!  
-Disk /dev/sdc: 160.0 GB追加したぜー！
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://techhey.hatenablog.com&quot;&gt;TechHey&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;みたいなメール来たところからスタート。&lt;/p&gt;
+&lt;p&gt;に移動しました。&lt;/p&gt;
 
-&lt;p&gt;ホンマに増強したのかをチェック&lt;/p&gt;
+&lt;p&gt;こちらのページは自己紹介とプロダクト一覧のポートフォリオっぽい感じのページにしようと思います。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fdisk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;以上、よろしくお願いします！&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;ディスク /dev/sdc: 160.0 GB, 160041885696 バイト&lt;br /&gt;
-ヘッド 255, セクタ 63, シリンダ 19457&lt;br /&gt;
-Units = シリンダ数 of 16065 * 512 = 8225280 バイト&lt;br /&gt;
-セクタサイズ (論理 / 物理): 512 バイト / 512 バイト&lt;br /&gt;
-I/O size (minimum/optimal): 512 bytes / 512 bytes&lt;br /&gt;
-ディスク識別子: 0x00072524  &lt;/p&gt;
+&lt;p&gt;河合 航平&lt;/p&gt;
 
-&lt;hr /&gt;
 
-&lt;p&gt;みたいな感じで返ってきたらおっけー。&lt;/p&gt;
-
-&lt;p&gt;確認したら&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fdisk&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/dev/s&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dc&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;fdiskコマンドは&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;fdiskは、ハード・ディスク領域を分割して複数のパーティションを&lt;br /&gt;
-作成・編集できるコマンドだ。&lt;br /&gt;
-fdiskの実行には、管理者権限（root権限）が必要である。  &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;な感じ。&lt;/p&gt;
-
-&lt;p&gt;このコマンド打ったら&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-コマンド (m でヘルプ):
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;みたいなのが出てくる。&lt;/p&gt;
-
-&lt;p&gt;コマンドの一覧は以下&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;コマンドの動作
-   a   ブート可能フラグをつける&lt;br /&gt;
-   b   bsd ディスクラベルを編集する&lt;br /&gt;
-   c   dos 互換フラグをつける&lt;br /&gt;
-   d   領域を削除する&lt;br /&gt;
-   l   既知の領域タイプをリスト表示する&lt;br /&gt;
-   m   このメニューを表示する&lt;br /&gt;
-   n   新たに領域を作成する&lt;br /&gt;
-   o   新たに空の DOS 領域テーブルを作成する&lt;br /&gt;
-   p   領域テーブルを表示する&lt;br /&gt;
-   q   変更を保存せずに終了する&lt;br /&gt;
-   s   空の Sun ディスクラベルを作成する&lt;br /&gt;
-   t   領域のシステム ID を変更する&lt;br /&gt;
-   u   表示/項目ユニットを変更する&lt;br /&gt;
-   v   領域テーブルを照合する&lt;br /&gt;
-   w   テーブルをディスクに書き込み、終了する&lt;br /&gt;
-   x   特別な機能 (エキスパート専用)  &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;新規領域を作りたいからまずはnを押す&lt;/p&gt;
-
-&lt;p&gt;その後&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;コマンドアクション  
-e   拡張  
-p   基本領域 (1-4)  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;って聞かれるから&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;p
-領域番号 (1-4): 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;あとは、なんかごちゃごちゃ聞かれるけど、Enterで無視。
-まとめると&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-n→p→1→[ENTER]→[ENTER]→w
-&lt;/code&gt;
-で一つのパーティションに振り分けることができる&lt;/p&gt;
-
-&lt;p&gt;ex4の規格でフォーマットしたいから&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mkfs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ext4&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/dev/s&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dc1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;こうする。  &lt;/p&gt;
-
-&lt;p&gt;ext4とは&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;ext4 ファイルシステムは ext3 ファイルシステムを拡張性のあるエクステンションにしたもので、 
-Red Hat Enterprise Linux 5 ではデフォルトのファイルシステムでした。
-ext4 は Red Hat Enterprise Linux 6 でもデフォルトのファイルシステムとなり、
-最大 16 テラバイトのファイルおよびファイルシステムのサイズまで対応します。
-また、 サブディレクトリ数は無制限に対応することができます
-(ext3 ファイルシステムの場合は最大 32,000 までの対応)。
-ただし、 リンク数が 65,000 を越えると 1 にリセットされ増加しなくなります。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;マウント先のディレクトリを任意で生成する&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/new_disk&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;あとはマウントするー&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ext4&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/dev/s&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dc1&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/new_disk&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;最後は&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;で確認されたかチェック。&lt;/p&gt;
-
-&lt;p&gt;dfコマンドは、マウントされたのしか出ないよー。&lt;/p&gt;
-
-&lt;p&gt;AWSやとある程度GUI上でできる。&lt;/p&gt;
-
-&lt;p&gt;その辺もまた記事書くかー。&lt;/p&gt;
-
-&lt;p&gt;これらのコマンドミスするとめっちゃやヴぁいから、気をつけてください。&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;「このブログのせいだァァァーーー」&lt;/h2&gt;
-
-&lt;p&gt;ってなっても責任は負いませんよ。。。&lt;/p&gt;
-
-&lt;p&gt;おわり&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;/articles/20131024&quot;&gt;SSD増強したった&lt;/a&gt; was originally published by Kohey Kawai at &lt;a href=&quot;&quot;&gt;HEY Blog&lt;/a&gt; on October 23, 2013.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[node socket.ioまとめ]]></title>
-  <link rel="alternate" type="text/html" href="/articles/20131023_socket" />
-  <id>/articles/20131023_socket</id>
-  <updated>2013-10-23T00:00:00-00:00</updated>
-  <published>2013-10-23T00:00:00-04:00</published>
-  
-  <author>
-    <name>Kohey Kawai</name>
-    <uri></uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;&lt;a href=&quot;http://tech.camph.net&quot;&gt;こっち&lt;/a&gt;で書いてた記事をこっちでコピーして表示してみる！&lt;/p&gt;
-
-&lt;p&gt;socket.io周りでいつも、あれ？この情報どうやって受信するor送信するんやっけ？っていうのをメモしておく。&lt;/p&gt;
-
-&lt;p&gt;もちろん、前提条件は以下のコード内に書きます。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-var io = require(&#39;socket.io&#39;);
-io.sockets.on(&#39;connection&#39;, function(socket) {
-//この中に書くよ
-});
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;送信者も含め全員に送る&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-io.sockets.emit(&#39;event_name&#39;,{name:&quot;hoge&quot;});
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;送信者以外全員に送る&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-io.socket.broadcast(&#39;event_name&#39;,{name:&quot;hoge&quot;});
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;socketid&quot;&gt;送信者のsocketのidを取得する&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-var socket_id = socket.id;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;room&quot;&gt;専用のroomに入る&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-socket.join(room_id);
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;socketid-1&quot;&gt;指定したsocket_idに送る&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-io.sockets.socket(socket_id).emit(&#39;event_name&#39;,{name:&quot;hoge&quot;});
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;送信者のみに送る&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-io.socket.socket(socket.id).emit(&#39;event_name&#39;,{name:&quot;hoge&quot;});
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;room-1&quot;&gt;room内全員に信する&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-io.sockets.in(room_id).emit(&#39;event_name&#39;,{name:&quot;hoge&quot;});
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;disconnectroom&quot;&gt;disconnectしないで、roomから消える&lt;/h3&gt;
-&lt;p&gt;disconnectが走れば、自動的にこれが走るが、disconnectしないでもroomから消えるには&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-socket.leave(room_id);
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;この辺、押さえとけば、socket.io使ったチャット関連はいけるっぽい。
-非同期処理に慣れたい。&lt;/p&gt;
-
-&lt;p&gt;こーへい&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;/articles/20131023_socket&quot;&gt;node socket.ioまとめ&lt;/a&gt; was originally published by Kohey Kawai at &lt;a href=&quot;&quot;&gt;HEY Blog&lt;/a&gt; on October 23, 2013.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[jekyllとgithubpagesでブログ作ってみた]]></title>
-  <link rel="alternate" type="text/html" href="/articles/20131023" />
-  <id>/articles/20131023</id>
-  <updated>2013-10-23T00:00:00-00:00</updated>
-  <published>2013-10-23T00:00:00-04:00</published>
-  
-  <author>
-    <name>Kohey Kawai</name>
-    <uri></uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;今までは、&lt;a href=&quot;http://koheyhey18.hatenadiary.jp&quot;&gt;koheyhey18.hatenadiary.jp&lt;/a&gt;とかAmebaとかでブログ書いてたけど、こっちで書いてみる。&lt;/p&gt;
-
-&lt;p&gt;ブログ記事もそうやけど、Aboutとかのコンテンツも随時追加していきます。&lt;/p&gt;
-
-&lt;p&gt;今日はこれだけ&lt;/p&gt;
-
-&lt;p&gt;Kohey&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;/articles/20131023&quot;&gt;jekyllとgithubpagesでブログ作ってみた&lt;/a&gt; was originally published by Kohey Kawai at &lt;a href=&quot;&quot;&gt;HEY Blog&lt;/a&gt; on October 23, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/articles/20140121&quot;&gt;リニューアル&lt;/a&gt; was originally published by Kohey Kawai at &lt;a href=&quot;&quot;&gt;HEY Blog&lt;/a&gt; on January 21, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
