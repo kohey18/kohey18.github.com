@@ -51,6 +51,7 @@ PHP,Python,mongoDB,AWS
 2010年 New Island Contest 決勝進出  
 2011年 CyberAgentアプリアイディアコンテスト 優勝  
 2011年 GREE IDEAJAM 準決勝進出  
+2013年 立命館大学主催 ICT Challenge+R NEXT 2013 関西サイボウズ賞   
 その他、複数出場。
 
 ----
